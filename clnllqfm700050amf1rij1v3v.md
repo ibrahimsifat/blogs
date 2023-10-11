@@ -1,6 +1,6 @@
 ---
-title: "Binary Search: Learn Algorithm in JavaScript"
-seoTitle: "Binary Search: Learn Algorithm in JavaScript with IbrahimSifat"
+title: "Binary Search: Learn Algorithm with JavaScript"
+seoTitle: "Binary Search: Learn Algorithm with JavaScript with IbrahimSifat"
 seoDescription: "Learning Algorithm: 2. Binary Search
 Binary Search: Searching Algorithm in JavaScript"
 datePublished: Wed Oct 11 2023 10:22:14 GMT+0000 (Coordinated Universal Time)
