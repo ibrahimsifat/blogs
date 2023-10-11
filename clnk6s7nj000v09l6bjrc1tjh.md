@@ -1,10 +1,10 @@
 ---
-title: "Linear Search: Searching Search Algorithm in JavaScript"
-seoTitle: "Linear Search: Searching Search Algorithm in JavaScript"
+title: "Linear Search: Learn Algorithm in JavaScript with IbrahimSifat"
+seoTitle: "Linear Search: Learn Algorithm in JavaScript with IbrahimSifat"
 seoDescription: "Linear search, also known as sequential search, is one of the simplest and most straightforward search algorithms. In this blog post, we'll explore the basi"
 datePublished: Tue Oct 10 2023 10:35:57 GMT+0000 (Coordinated Universal Time)
 cuid: clnk6s7nj000v09l6bjrc1tjh
-slug: linear-search-searching-search-algorithm-in-javascript
+slug: linear-search-learn-algorithm-in-javascript-with-ibrahimsifat
 tags: javascript, algorithm, linearsearch, searching-algorithms
 
 ---
