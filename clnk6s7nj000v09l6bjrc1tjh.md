@@ -17,7 +17,7 @@ Linear search, also known as sequential search, is one of the simplest and most 
 
 Linear search is a straightforward algorithm that iterates through each element in a list until it finds the target value or reaches the end of the list. It is a basic search algorithm and is often the first algorithm taught to beginners.
 
-In the Linear Search Algorithm, 
+In the Linear Search Algorithm,
 
 * Every element is considered as a potential match for the key and checked for the same.
     
@@ -45,10 +45,9 @@ Let's look at a simple JavaScript implementation of the linear search algorithm:
 2. Loop through each element in the array
     
     ```javascript
-    const linearSearch = (arr, n, target) => {
-      // Loop through each element in the array
-      for (let i = 0; i < n; i++) {}
-    }
+    // const linearSearch = (arr, n, target) => {
+         for (let i = 0; i < n; i++) {}
+    // }
     ```
     
 3. Check if the current element is equal to the target If found, return the index of the target.
@@ -125,6 +124,67 @@ In this code snippet:
 4. **Iteration**: If the target is not found, the function moves to the next element in the array and repeats the process until the end of the array is reached.
     
 5. **Result**: If the target is not found in the entire array, the function returns -1.
+    
+
+### **Recursive Linear Search:**
+
+Let's break down the Recursive Linear Search algorithm step by step:
+
+1. Declares a function named `binaryLinearSearch` that takes an array `arr`, the size of the array `n`, and a `target` value to search for.
+    
+    ```javascript
+    
+    const binaryLinearSearch = (arr, n, target) => {
+    //  if (n === 0) {
+    //    return -1;
+    //  } else if (arr[n - 1] === target) {
+    //    return n - 1;
+    //  }
+    //  return binaryLinearSearch(arr, n - 1, target);
+    };
+    ```
+    
+2. Check if the array is empty (`n` is 0). If so, it means the target cannot be found, and the function returns -1.
+    
+    ```javascript
+    
+    // const binaryLinearSearch = (arr, n, target) => {
+         if (n === 0) {
+         return -1;
+    //   } else if (arr[n - 1] === target) {
+    //     return n - 1;
+    //   }
+    //   return binaryLinearSearch(arr, n - 1, target);
+    // };
+    ```
+    
+3. Check if the last element of the array is equal to the target. If it is, the function returns the index of the last element.
+    
+    ```javascript
+    // const binaryLinearSearch = (arr, n, target) => {
+    //   if (n === 0) {
+    //     return -1;
+    //   }
+         else if (arr[n - 1] === target) {
+           return n - 1;
+         }
+    //  return binaryLinearSearch(arr, n - 1, target);
+    // };
+    ```
+    
+4. If the last element is not the target, the function makes a recursive call on a smaller array by reducing the size (`n - 1`). This process repeats until the base case is reached.
+    
+    ```javascript
+    // const binaryLinearSearch = (arr, n, target) => {
+    //   if (n === 0) {
+    //     return -1;
+    //   }
+    //   else if (arr[n - 1] === target) {
+    //     return n - 1;
+    //   }
+        return binaryLinearSearch(arr, n - 1, target);
+    // };
+    ```
     
 
 **Advantages of Linear Search:**
