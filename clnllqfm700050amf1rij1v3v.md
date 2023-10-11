@@ -1,5 +1,5 @@
 ---
-title: "Binary Search: Learn Algorithm in JavaScript with IbrahimSifat"
+title: "Binary Search: Learn Algorithm in JavaScript"
 seoTitle: "Binary Search: Learn Algorithm in JavaScript with IbrahimSifat"
 seoDescription: "Learning Algorithm: 2. Binary Search
 Binary Search: Searching Algorithm in JavaScript"
