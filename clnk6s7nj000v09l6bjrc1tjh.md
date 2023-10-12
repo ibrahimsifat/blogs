@@ -187,6 +187,160 @@ Let's break down the Recursive Linear Search algorithm step by step:
     ```
     
 
+# It's Time to Improve Linear Search
+
+Linear search is like flipping through a book page by page until you find what you're looking for. It goes through each element in order until it finds a match or reaches the end.
+
+To make it a bit faster, we can use a trick called "Transposition." If we find the key element, we swap it with the element just before it. This makes future searches for the same element quicker because we move it closer to the beginning of the list.
+
+Imagine you're looking for your favorite toy on a shelf. When you find it, you put it in front of the shelf, so next time you can grab it faster without going through all the toys again. That's what transposition does in a nutshell.
+
+Let's dive in and learn through practical experience:
+
+1. Defines a function named `LinearSearchTransposition` that takes an array `arr` and a `key` value to search for.
+    
+    ```javascript
+    function LinearSearchTransposition(arr, key) { ... }
+    ```
+    
+2. Initiates a loop that traverses through each element of the array.
+    
+    ```javascript
+    for (i = 0; i < arr.length; i++) { ... }
+    ```
+    
+3. Check if the `key` is the first element. If so, return the index immediately, as there is no previous element to swap with.
+    
+    ```javascript
+    //   function LinearSearchTransposition(arr, key) {
+    //      let i;
+        
+    //      for (i = 0; i < arr.length; i++) {
+              if (key == arr[i]) {
+                if (i == 0) return i;
+        
+    //          let temp = arr[i];
+    //          arr[i] = arr[i - 1];
+    //          arr[i - 1] = temp;
+        
+    //          return i;
+    //        }
+    //      }
+        
+    //      return -1;
+    //    }
+        
+    //    console.log(LinearSearchTransposition([1, 23, 3, 4, 5, 6, 7, 8, 9, 10], 10));
+            
+    ```
+    
+4. Swaps the current element with its previous element. The temporary variable `temp` is used to facilitate the swap.
+    
+    ```javascript
+    //   function LinearSearchTransposition(arr, key) {
+    //      let i;
+        
+    //      for (i = 0; i < arr.length; i++) {
+    //          if (key == arr[i]) {
+    //            if (i == 0) return i;
+        
+                let temp = arr[i];
+                arr[i] = arr[i - 1];
+                arr[i - 1] = temp;
+        
+    //          return i;
+    //        }
+    //      }
+        
+    //      return -1;
+    //    }
+        
+    //    console.log(LinearSearchTransposition([1, 23, 3, 4, 5, 6, 7, 8, 9, 10], 10));
+            
+    ```
+    
+    1. Alternatively, you can use a destructuring assignment for a more concise swap:
+        
+        ```javascript
+        [(arr[i], arr[i - 1])] = [arr[i - 1], arr[i]];
+        ```
+        
+5. Returns the index of the element where the key was found after the swap.
+    
+    ```javascript
+    //   function LinearSearchTransposition(arr, key) {
+    //      let i;
+        
+    //      for (i = 0; i < arr.length; i++) {
+    //          if (key == arr[i]) {
+    //            if (i == 0) return i;
+        
+    //          let temp = arr[i];
+    //          arr[i] = arr[i - 1];
+    //          arr[i - 1] = temp;
+        
+                return i;
+    //        }
+    //      }
+        
+    //      return -1;
+    //    }
+        
+    //    console.log(LinearSearchTransposition([1, 23, 3, 4, 5, 6, 7, 8, 9, 10], 10));
+            
+    ```
+    
+6. If the key is not found in the entire array, the function <mark>returns -1</mark>.
+    
+    ```javascript
+    //   function LinearSearchTransposition(arr, key) {
+    //      let i;
+        
+    //      for (i = 0; i < arr.length; i++) {
+    //          if (key == arr[i]) {
+    //            if (i == 0) return i;
+        
+    //          let temp = arr[i];
+    //          arr[i] = arr[i - 1];
+    //          arr[i - 1] = temp;
+        
+    //          return i;
+    //        }
+    //      }
+        
+          return -1;
+    //    }
+        
+    //    console.log(LinearSearchTransposition([1, 23, 3, 4, 5, 6, 7, 8, 9, 10], 10));
+            
+    ```
+    
+7. Invokes the function with an example array and key (10) and logs the result.
+    
+    ```javascript
+    //   function LinearSearchTransposition(arr, key) {
+    //      let i;
+        
+    //      for (i = 0; i < arr.length; i++) {
+    //          if (key == arr[i]) {
+    //            if (i == 0) return i;
+        
+    //          let temp = arr[i];
+    //          arr[i] = arr[i - 1];
+    //          arr[i - 1] = temp;
+        
+    //          return i;
+    //        }
+    //      }
+        
+    //    return -1;
+    //    }
+        
+    console.log(LinearSearchTransposition([1, 23, 3, 4, 5, 6, 7, 8, 9, 10], 10));
+            
+    ```
+    
+
 **Advantages of Linear Search:**
 
 * Linear search can be used irrespective of whether the array is sorted or not. It can be used on arrays of any data type.
