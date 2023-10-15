@@ -290,7 +290,7 @@ Let's dive in and learn through practical experience:
             
     ```
     
-6. If the key is not found in the entire array, the function <mark>returns -1</mark>.
+6. If the key is not found in the entire array, the function `returns -1`.
     
     ```javascript
     //   function LinearSearchTransposition(arr, key) {
@@ -338,6 +338,124 @@ Let's dive in and learn through practical experience:
         
     console.log(LinearSearchTransposition([1, 23, 3, 4, 5, 6, 7, 8, 9, 10], 10));
             
+    ```
+    
+
+### Front (or Head) Method in Linear Search
+
+The Move to Front (or Head) method is a search optimization technique where, upon finding a key element, it is immediately moved to the front (index 0) of the array. This strategy is employed to reduce the time complexity of subsequent searches for the same key, making them constant time (O(1)).
+
+Here's a breakdown using an example:
+
+Consider the array `arr[] = {2, 5, 7, 1, 6, 4, 5, 8, 3, 7}`. Let's say we want to search for the key 4.
+
+1. **Initial Search:**
+    
+    * The key 4 is found at index 5 after 6 comparisons.
+        
+    * Array before Move to Front: `{2, 5, 7, 1, 6, 4, 5, 8, 3, 7}`.
+        
+2. **Move to Front Operation:**
+    
+    * After the search, the key 4 is moved to the front of the array.
+        
+    * Array after Move to Front: `{4, 2, 5, 7, 1, 6, 5, 8, 3, 7}`.
+        
+3. **Subsequent Search:**
+    
+    * Now, if we search for the key 4 again, it is found at index 0.
+        
+    * Array continues to be `{4, 2, 5, 7, 1, 6, 5, 8, 3, 7}`.
+        
+
+By moving the found key to the front, the subsequent search for the same key becomes highly efficient, as the key is now at the beginning of the array. This approach optimizes the search process and reduces the search space, resulting in constant time complexity for repeated searches of the same key.
+
+**Here's a JavaScript code example implementing the Move to Front algorithm:**
+
+1. Declares a function named `linearSearchMoveToFront` that takes an array (`arr`) and a key (`key`) to search.
+    
+    ```javascript
+    const linearSearchMoveToFront = (arr, key) => { ... }
+    ```
+    
+2. Initiates a loop to traverse the array.
+    
+    ```javascript
+    //    const linearSearchMoveToFront = (arr, key) => {
+            for (let i = 0; i < arr.length; i++) {
+    //        if (key === arr[i]) {
+    //          let temp = arr[i];
+    //          arr[i] = arr[0];
+    //          arr[0] = temp;
+    //          return i;
+    //        }
+            }
+    //      return -1;
+    //    };
+    ```
+    
+3. Check if the current element in the array is equal to the key.
+    
+    ```javascript
+    //    const linearSearchMoveToFront = (arr, key) => {
+    //      for (let i = 0; i < arr.length; i++) {
+              if (key === arr[i]) {
+    //          let temp = arr[i];
+    //          arr[i] = arr[0];
+    //          arr[0] = temp;
+    //          return i;
+              }
+    //      }
+    //      return -1;
+    //    };
+    ```
+    
+4. If the key is found, swap the current element with the element at the 0-th index. This is the move-to-front operation.
+    
+    ```javascript
+    //    const linearSearchMoveToFront = (arr, key) => {
+    //      for (let i = 0; i < arr.length; i++) {
+    //        if (key === arr[i]) {
+                let temp = arr[i];
+                arr[i] = arr[0];
+                arr[0] = temp;
+    //          return i;
+    //        }
+    //      }
+    //      return -1;
+    //    };
+    ```
+    
+5. Returns the index where the key was found after the move-to-front operation.
+    
+    ```javascript
+    //    const linearSearchMoveToFront = (arr, key) => {
+    //      for (let i = 0; i < arr.length; i++) {
+    //        if (key === arr[i]) {
+    //          let temp = arr[i];
+    //          arr[i] = arr[0];
+    //          arr[0] = temp;
+                return i;
+    //        }
+    //      }
+    //      return -1;
+    //    };
+    ```
+    
+6. If the loop completes without finding the key, the function returns `-1` to indicate that the key is not present in the array.
+    
+    ```javascript
+    //    const linearSearchMoveToFront = (arr, key) => {
+    //      for (let i = 0; i < arr.length; i++) {
+    //        if (key === arr[i]) {
+    //          let temp = arr[i];
+    //          arr[i] = arr[0];
+    //          arr[0] = temp;
+    //          return i;
+    //        }
+    //      }
+            return -1;
+    //    };
     ```
     
 
