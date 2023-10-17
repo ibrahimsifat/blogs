@@ -11,7 +11,7 @@ tags: time-complexity, big-o-notation, space-complexity
 
 ---
 
-Welcome, understanding the concepts of time and space complexities is akin to having a map that guides you through the vast landscape of programming. In this beginner-friendly guide, we'll break down these concepts with simple examples to make your coding adventures smoother.
+Hey friend! Think of understanding time and space complexities like figuring out the best way to organize your closet. I'm here to help you keep it simple and neat in the coding world. So, grab your coding hangers, and let's make things straightforward and stress-free! 🧑‍💻👕
 
 **Keep In Mind for this Lectures:**
 
@@ -24,7 +24,7 @@ Welcome, understanding the concepts of time and space complexities is akin to ha
 
 ## **1\. Why Time Complexity?**
 
-Imagine you're searching for a book in a library. How long will it take, and does the time taken depend on the number of books? Time complexity answers these questions for your code.
+Imagine you're searching for a book in a library. How long will it take, and does the time depend on the number of books? Time complexity answers these questions for your code.
 
 ### **1.1 Examples of Time Complexity**
 
@@ -86,9 +86,9 @@ console.log(result);
     
     In our binary search spell:
     
-    * **Best Case:** O(1) - If you find the target page on the first try, you're done!
+    * **Best Case:** O(1) - You're done if you find the target page on the first try!
         
-    * **Worst Case:** O(log n) - In the worst case, you keep dividing the search space in half until you find the page or determine it's not in the book. The log n term comes from the fact that you're repeatedly dividing the search space in half.
+    * **Worst Case:** O(log n) - In the worst case, you divide the search space in half until you find the page or determine it's not in the book. The log n term comes from the fact that you're repeatedly dividing the search space in half.
         
 
 This binary search algorithm showcases logarithmic time complexity (`O(log n)`) due to the halving of the search space in each iteration, making it an efficient approach for sorted arrays.
@@ -133,9 +133,9 @@ In `findMagicalBookWithAnalysis`, the time complexity is `O(n)` because the numb
 
 If time complexity is about the speed of your search, space complexity is like the magical backpack you carry—how much stuff can you fit inside?
 
-### **2.1 Space Complexity Examples**
+**2.1 Space Complexity Examples**
 
-#### **Example 1: Constant Space Complexity (O(1))**
+Example 1: Constant Space Complexity (O(1))
 
 ```javascript
 function castSimpleSpell() {
@@ -173,7 +173,6 @@ function packMagicalItems(numberOfItems) {
 
 * The `new Array(numberOfItems)` dynamically allocates memory to create an array with a length of `numberOfItems`.
     
-
 * The space complexity is O(n) because the space required scales linearly with the size of the input (`numberOfItems`).
     
 
@@ -254,19 +253,21 @@ function sortMagicalPotions(potions) {
 }
 ```
 
-1. In this recursive spell,
+### **Solutions:**
+
+1. **Example 1:**
     
     1. Time complexity of `O(n)` .
         
     2. Space complexity of `O(n)`.
         
-2. `reverseMagicalSpell` reverses a magical spell in place, having a
+2. **Example 2:**
     
     1. Time complexity of `O(n)` .
         
     2. Space complexity of `O(1)`.
         
-3. `sortMagicalPotions` uses a sorting spell,
+3. **Example 3:**
     
     1. Time complexity of `O(n)` .
         
@@ -396,7 +397,7 @@ Asymptotic notations provide a concise way to describe the growth rate of an alg
         
         * Basic operation: Comparison inside the loop.
             
-        * Time complexity: Ω(1) in the best case (target found on the first comparison).
+        * Time complexity: Ω(1) in the best case (`target found on the first comparison`).
             
 
 #### Theta Notation (Θ):
