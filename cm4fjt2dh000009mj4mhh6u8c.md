@@ -4,7 +4,7 @@ seoTitle: "Java Programming Basics for Beginners"
 seoDescription: "Learn Java fundamentals in Bengali, explore Java's architecture, platform independence, and execution with relatable analogies. Perfect for beginners!"
 datePublished: Sun Dec 08 2024 11:56:40 GMT+0000 (Coordinated Universal Time)
 cuid: cm4fjt2dh000009mj4mhh6u8c
-slug: java-programming-fundamentals-java
+slug: java-programming-fundamentals-bangla
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1733658874494/e93df3b7-1ac0-48e1-9a01-abd684db89c8.jpeg
 ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1733658942948/35c28f4c-85bd-4098-94da-8233eaec9839.jpeg
 tags: programming-blogs, java, java-programming, programming-basics, beginnerguide, banglatutorial, javaarchitecture
